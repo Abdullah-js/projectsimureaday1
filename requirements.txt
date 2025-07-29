@@ -1,0 +1,28 @@
+    fastapi
+    uvicorn
+    vaderSentiment
+    praw
+    asyncpraw
+    tweepy
+    python-dotenv
+    requests 
+fastapi
+uvicorn[standard]
+python-dotenv
+vaderSentiment
+praw
+fastapi
+uvicorn[standard]
+aiohttp
+python-dotenv
+vaderSentiment
+pydantic
+# pip install fastapi uvicorn python-dotenv aiohttp python-multipart
+fastapi
+uvicorn[standard]
+python-dotenv
+aiohttp
+# pip install -U flask-cors
+#u probably dont need all of this 
+# but this is what i have installed in my virtual env
+#.  uvicorn main:app --reload --port 8001

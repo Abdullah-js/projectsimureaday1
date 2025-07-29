@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Hype Recommender</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Stock Hype Recommender</h1>
+
+        <div class="input-section">
+            <label for="ticker-select">Select a Stock Ticker:</label>
+            <select id="ticker-select">
+                <option value="">Loading tickers...</option>
+            </select>
+            <button id="analyze-button" disabled>Analyze Stock</button>
+        </div>
+
+        <div id="loading-spinner" class="spinner-container hidden">
+            <div class="spinner"></div>
+            <p>Analyzing...</p>
+        </div>
+
+        <div id="error-message" class="error-message hidden"></div>
+
+        <div id="results-section" class="results-section hidden">
+            <h2>Analysis for <span id="result-symbol"></span></h2>
+
+            <div class="sentiment-card card">
+                <h3>Sentiment</h3>
+                <p>Score: <span id="sentiment-score"></span></p>
+                <p>Category: <span id="sentiment-category"></span></p>
+                <p>Posts Analyzed: <span id="sentiment-posts"></span></p>
+            </div>
+
+            <div class="financial-card card">
+                <h3>Financial Data</h3>
+                <p>Price: <span id="financial-price"></span></p>
+                <p>Change (%): <span id="financial-change"></span></p>
+                <p>Market Cap: <span id="financial-market-cap"></span></p>
+                <p>P/E Ratio: <span id="financial-pe-ratio"></span></p>
+                <p>Source: <span id="financial-source"></span></p>
+            </div>
+
+            <div class="news-card card">
+                <h3>Recent News</h3>
+                <ul id="news-list">
+                    <li>Loading news...</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
