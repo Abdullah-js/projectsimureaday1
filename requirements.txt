@@ -1,11 +1,11 @@
-    fastapi
-    uvicorn
-    vaderSentiment
-    praw
-    asyncpraw
-    tweepy
-    python-dotenv
-    requests 
+fastapi
+uvicorn
+vaderSentiment
+praw
+asyncpraw
+tweepy
+python-dotenv
+requests 
 fastapi
 uvicorn[standard]
 python-dotenv
